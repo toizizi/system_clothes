@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购买服装系统</title>
+    <link rel="stylesheet" href="clothes.css">
+</head>
+<body>
+<div class="all">
+    <header>
+    <h1>服装商店系统</h1>
+    <p class="subtitle">快来选择你中意的宝贝吧！⬮ω⬮</p>
+</header>
+
+<main class="container">
+    <section class="products-section">
+        <div id="product-picture" class="product-picture"></div>
+    </section>
+    <aside class="cart-section">
+        <h2>🛒 购物车</h2>
+        
+        <div id="status-message">欢迎光临，请添加商品~</div>
+
+        <div id="cart-display" class="cart-items">
+            <p style="text-align:center; color:#999; padding:20px;">购物车是空的哦</p>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <input type="text" id="search-input" placeholder="搜索商品名称...">
+                <button class="action-btn" onclick="handleSearch()">搜索</button>
+            </div>
+            
+            <div class="control-group">
+                <input type="text" id="update-id" placeholder="请输入你要修改的ID">
+                <input type="number" id="update-num" placeholder="数量" style="max-width: 60px;">
+                <button class="action-btn" onclick="handleUpdate()">修改</button>
+            </div>
+
+            <button class="action-btn clear-btn" onclick="clearCart()">清空购物车</button>
+        </div>
+    </aside>
+</main>
+    <script src="../selfdemosystem/clothes.js"></script>
+</div>
+    
+</body>
+</html>
